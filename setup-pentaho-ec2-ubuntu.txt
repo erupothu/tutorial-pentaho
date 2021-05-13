@@ -1,0 +1,51 @@
+sudo apt update
+
+
+------------------ Install Desktop on Ubuntu Server  --------------
+
+sudo apt-get install xubuntu-desktop
+mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
+
+nano ~/.vnc/xstartup
+
+#!/bin/bash
+xrdb $HOME/.Xresources
+startxfce4 &
+
+sudo chmod +x ~/.vnc/xstartup
+
+sudo apt install gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
+
+apt install net-tools
+netstat -tlnp
+
+------------- Create VNC Server for Remote Desktop Access ----------------
+sudo apt install tigervnc-standalone-server tigervnc-common tigervnc-xorg-extension tigervnc-viewer
+vncserver
+vncserver -kill :1
+vncserver -list
+
+-----------------Install Java----------------------
+apt install openjdk-8-jre-headless
+sudo apt install openjdk-8-jdk
+java -version
+
+--------------- Setup ssh login with Password ------------
+passwd ubuntu
+XXXXX
+
+sudo nano /etc/ssh/sshd_config
+PermitRootLogin yes
+PasswordAuthentication yes
+
+sudo service sshd restart
+sudo apt-get install libwebkitgtk-1.0-0
+
+---- Open Pentaho ---------------
+Download pentaho open Source code
+--- Source code
+cd to data-integeration
+./spoon.sh
+
+
+
