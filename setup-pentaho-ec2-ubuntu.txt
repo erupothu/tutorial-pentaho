@@ -48,4 +48,18 @@ cd to data-integeration
 ./spoon.sh
 
 
+--------------- Job Setup ------------------------
+
+
+
+---------------- Transformation Setup -------------------------
+
+
+
+--------------- Mail Step Setup --------------------------
+
+
+
+
+
 
