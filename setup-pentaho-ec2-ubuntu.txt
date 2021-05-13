@@ -43,6 +43,7 @@ sudo apt-get install libwebkitgtk-1.0-0
 
 ---- Open Pentaho ---------------
 Download pentaho open Source code
+https://sourceforge.net/projects/pentaho/files/Pentaho%209.0/client-tools/pdi-ce-9.0.0.0-423.zip/download
 --- Source code
 cd to data-integeration
 ./spoon.sh
